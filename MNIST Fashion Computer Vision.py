@@ -12,4 +12,8 @@ plt.imshow(training_images[29])
 print(training_labels[29])
 print(training_images[29])
 
+#Normalize Data
+training_images  = training_images / 255.0
+test_images = test_images / 255.0
+
 
