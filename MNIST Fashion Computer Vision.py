@@ -19,8 +19,8 @@ test_images = test_images / 255.0
 # Defne Calbacks to stop the training when a Loss objective is satisfied
 class myCallback(tf.keras.callbacks.Callback):
   def on_epoch_end(self, epoch, logs={}):
-    if(logs.get('loss')<0.4):
-      print("\nReached 60% accuracy so cancelling training!")
+    if(logs.get('loss')<0.1):
+      print("\nReached 90% accuracy so cancelling training!")
       self.model.stop_training = True
 
 callbacks = myCallback()
