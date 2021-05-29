@@ -29,3 +29,6 @@ model.compile(optimizer = tf.optimizers.Adam(),
 # Model Training
 model.fit(training_images, training_labels, epochs=5)
 
+#Model evaluation
+model.evaluate(test_images, test_labels)
+
